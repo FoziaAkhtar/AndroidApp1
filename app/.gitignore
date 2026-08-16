@@ -1,1 +1,30 @@
-/build
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Build files
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+
+# Generated files
+.externalNativeBuild/
+.cxx/
+
+# Android Studio caches
+captures/
+
+# Signing files
+*.jks
+*.keystore
+
+# Google Services
+google-services.json
+
+# OS files
+.DS_Store
