@@ -2,3 +2,4 @@
 plugins {
     alias(libs.plugins.android.application) apply false
 }
+val compileSdkVersion by extra("android-37.1")

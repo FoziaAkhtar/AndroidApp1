@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.androidapp1"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk(rootProject.extra["compileSdkVersion"] as String)
 
     defaultConfig {
         applicationId = "com.example.androidapp1"
@@ -28,6 +26,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    compileSdk {
+        version = preview("37.1")
     }
 }
 
